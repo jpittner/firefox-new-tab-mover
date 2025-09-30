@@ -35,13 +35,11 @@ async function handleTabCreated(tab) {
   // We specify:
   // 1. tab.id: The ID of the tab we want to move.
   // 2. { index: 0 }: The target position (0 is the very first tab).
-  
-  console.log('New tab %o', tab)
 
   // We also check if the tab is already in position 0 just in case,
   // although usually a newly created tab won't be index 0 unless it's the only tab.
 
-  window.setTimeout( async () => {
+  window.setTimeout(async () => {
 
     if (tab.index !== 0) {
       const pinnedTabsLength = await getPinnedTabCount()
@@ -54,8 +52,8 @@ async function handleTabCreated(tab) {
           console.error(`Error moving tab ${tab.id}: ${error}`);
         });
     }
-  },0)    
-  
+  }, 0)
+
 }
 
 // Attach the handler to the onCreated event
