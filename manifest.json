@@ -1,0 +1,12 @@
+{
+"manifest_version": 3,
+"name": "New Tab Opener: First Position",
+"version": "1.0",
+"description": "Moves all newly opened tabs to the first position (index 0) in the current window.",
+"permissions": [
+"tabs"
+],
+"background": {
+"scripts": ["background.js"]
+}
+}

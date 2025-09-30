@@ -1,0 +1,1 @@
+Moves new Firefox tabs to the start of the bar (top for vertical, left for horizontal)
